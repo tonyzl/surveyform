@@ -13,9 +13,13 @@
     <p id ="description">The porpuse of this page is to gave an example of a survey page</p>
     <form id="survey-form" >
      
-      <input type="text"  id="name" class="form-control" placeholder="Enter your name" required="">Name</input>
-      <input type="text"  id="email" class="form-control" placeholder="Enter your email" required="">Email</input>
-
+      <input type="text"  id="name" name="name" class="form-control" placeholder="Enter your name" required="">Name</input>
+      <br />
+      <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">Email</input >
+      <br />
+      <input type="number"  id="number" name="number" class="form-control" placeholder="Enter your Age" pattern="[1-9]" min = 0   max = 100 required="">Age</input>
+      <br />
+      <input type="submit">
     </form>
     <!--
 
